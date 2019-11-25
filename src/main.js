@@ -5,9 +5,7 @@ import {createBoardTemplate} from './components/board.js';
 import {createFilterTemplate} from './components/filter.js';
 import {createMenuTemplate} from './components/menu.js';
 
-
 const TASK_COUNT = 3;
-
 
 const render = (container, template, place = `beforeend`) => {
   container.insertAdjacentHTML(place, template);
