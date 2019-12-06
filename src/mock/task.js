@@ -1,5 +1,6 @@
-export {generateTask, generateTasks};
+
 import {COLORS} from "../constants";
+
 
 const DESCRIPTION = [
   `Изучить теорию`,
@@ -24,14 +25,6 @@ const TAGS = [
   `intensive`,
   `keks`
 ];
-//
-// const COLORS = [
-//   `black`,
-//   `yellow`,
-//   `blue`,
-//   `green`,
-//   `pink`
-// ];
 
 const generateTags = (tags) => { // !!!!!
   return tags
@@ -80,9 +73,8 @@ const generateTask = () => {
   };
 };
 
-const generateTasks = (count) => {
+export const generateTasks = (count) => {
   return new Array(count)
     .fill(``)
     .map(generateTask);
 };
-
