@@ -38,7 +38,6 @@ export default class SiteMenu {
   }
 
   getTemplate() {
-    console.log(1);
     return createMenuTemplate();
   }
 
