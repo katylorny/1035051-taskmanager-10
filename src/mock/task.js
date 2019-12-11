@@ -69,7 +69,7 @@ const generateTask = () => {
     tags: new Set(generateTags(TAGS)),
     color: getRandomArrayElement(COLORS),
     isFavorite: Math.random() > 0.5,
-    isArchive: Math.random() > 0.5,
+    isArchive: Math.random() > 0.5
   };
 };
 
