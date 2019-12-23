@@ -60,7 +60,7 @@ const generateRepeatingDays = () => {
 // ------------------------------------------------------
 
 const generateTask = () => {
-  const dueDate = Math.random() > 0.5 ? null : getRandomDate(); // почему это именно здесь, а не снаружи?
+  const dueDate = Math.random() > 0.5 ? null : getRandomDate();
 
   return {
     description: getRandomArrayElement(DESCRIPTION),
