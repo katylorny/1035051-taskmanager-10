@@ -4,7 +4,8 @@ import {formatTime, formatDate} from "../utils/common";
 import AbstractSmartComponent from "./abstract-smart-component";
 
 const isRepeating = (repeatingDays) => {
-  return Object.values(repeatingDays).some(Boolean); // .some((it) => it === true)
+  return Object.values(repeatingDays).some(Boolean);
+  // .some((it) => it === true)
 };
 
 const createColorsMarkup = (colors, currentColor) => {
