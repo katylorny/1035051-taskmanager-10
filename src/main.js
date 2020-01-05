@@ -1,3 +1,5 @@
+import TasksModel from "./models/tasks";
+
 const TASK_COUNT = 22;
 
 import BoardComponent from './components/board.js';
@@ -24,7 +26,10 @@ render(siteMainElement, boardComponent.getElement(), RENDER_POSITION.BEFOREEND);
 
 const tasks = generateTasks(TASK_COUNT);
 
-const boardController = new BoardController(boardComponent);
-boardController.render(tasks);
+const tasksModel = new TasksModel();
+tasksModel.setTasks(tasks);
+
+const boardController = new BoardController(boardComponent, tasksModel);
+boardController.render();
 
 
