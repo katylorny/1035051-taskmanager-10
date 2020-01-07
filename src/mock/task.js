@@ -28,7 +28,7 @@ const TAGS = [
 
 const generateTags = (tags) => { // !!!!!
   return tags
-    .filter(() => Math.random() > 0.5)
+    .filter(() => Math.random() > 0.7)
     .slice(0, 3);
 };
 

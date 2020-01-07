@@ -30,7 +30,7 @@ export const getRepeatingTasks = (tasks) => {
 };
 
 export const getTasksWithHashtags = (tasks) => {
-  return tasks.filter((task) => task.tags.size); // почему не length???????
+  return tasks.filter((task) => task.tags.size); // TODO: почему не length???????
 };
 
 export const getTasksInOneDay = (tasks, date) => {
@@ -56,6 +56,6 @@ export const getTasksByFilter = (tasks, filterType) => {
     case FILTER_TYPE.TODAY:
       return getTasksInOneDay(getNotArchiveTasks(tasks), nowDate);
   }
-  console.log(tasks);
+  // console.log(tasks);
   return tasks;
 };
